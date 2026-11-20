@@ -1,6 +1,6 @@
-<!-- BANNER SUPERIOR -->
+<!-- BANNER SUPERIOR (SVG PROPIO ANIMADO EN EL REPO) -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,45:1e1b4b,100:06b6d4&height=160&section=header&text=Alfonso%20Dur%C3%A1n%20%7C%20QttSaed&fontSize=38&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Developer%20%E2%80%A2%20Data%20%26%20ML%20%E2%80%A2%20Ingenier%C3%ADa%20Inform%C3%A1tica%20PUCV&descSize=16&descAlignY=62" width="100%" alt="Banner Alfonso Durán" />
+  <img src="./assets/banner.svg" width="100%" alt="Banner Alfonso Durán | QttSaed" />
 
   <!-- SUBTÍTULO ANIMADO (TYPING SVG) -->
   <a href="https://github.com/QttSaed">
@@ -35,7 +35,7 @@ Soy **Alfonso Durán**, estudiante de **Ingeniería Informática en la PUCV** (*
     <img src="https://img.shields.io/badge/GitHub-QttSaed-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub: QttSaed" />
   </a>
   <a href="https://proyecto-web-y-movil.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/🃏_TCGStore_Live-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=06B6D4" alt="TCGStore Live" />
+    <img src="https://img.shields.io/badge/%F0%9F%83%8F_TCGStore_Live-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=06B6D4" alt="TCGStore Live" />
   </a>
 </p>
 
@@ -105,5 +105,5 @@ Soy **Alfonso Durán**, estudiante de **Ingeniería Informática en la PUCV** (*
 
 <!-- PIE DE PÁGINA ONDULADO -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,45:1e1b4b,100:06b6d4&height=90&section=footer" width="100%" alt="Footer" />
+  <img src="./assets/footer.svg" width="100%" alt="Footer" />
 </div>

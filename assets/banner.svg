@@ -1,0 +1,61 @@
+<svg width="854" height="170" viewBox="0 0 854 170" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="45%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Animated Wave 1 (Back) -->
+  <path fill="url(#bgGrad)" fill-opacity="0.45">
+    <animate attributeName="d" dur="14s" repeatCount="indefinite" keyTimes="0;0.5;1"
+      values="
+        M0 0 L0 125 Q 213.5 160 427 128 T 854 135 L 854 0 Z;
+        M0 0 L0 138 Q 213.5 105 427 138 T 854 120 L 854 0 Z;
+        M0 0 L0 125 Q 213.5 160 427 128 T 854 135 L 854 0 Z" />
+  </path>
+
+  <!-- Animated Wave 2 (Front) -->
+  <path fill="url(#bgGrad)" fill-opacity="0.92">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1"
+      values="
+        M0 0 L0 118 Q 213.5 95 427 122 T 854 115 L 854 0 Z;
+        M0 0 L0 128 Q 213.5 152 427 118 T 854 132 L 854 0 Z;
+        M0 0 L0 118 Q 213.5 95 427 122 T 854 115 L 854 0 Z" />
+  </path>
+
+  <!-- Subtle Grid / Tech Dots -->
+  <circle cx="75" cy="35" r="2" fill="#06b6d4" opacity="0.4" />
+  <circle cx="95" cy="35" r="2" fill="#06b6d4" opacity="0.25" />
+  <circle cx="75" cy="52" r="2" fill="#06b6d4" opacity="0.25" />
+  <circle cx="780" cy="40" r="2" fill="#ffffff" opacity="0.35" />
+  <circle cx="760" cy="40" r="2" fill="#ffffff" opacity="0.2" />
+  <circle cx="780" cy="57" r="2" fill="#ffffff" opacity="0.2" />
+
+  <!-- Main Title -->
+  <text x="50%" y="56" text-anchor="middle" dominant-baseline="middle"
+        font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif"
+        font-size="36" font-weight="800" fill="#ffffff" letter-spacing="0.8">
+    Alfonso Durán <tspan fill="#22d3ee" font-weight="400">|</tspan> <tspan fill="#38bdf8">QttSaed</tspan>
+  </text>
+
+  <!-- Accent Divider Line -->
+  <rect x="297" y="76" width="260" height="2.5" rx="1.25" fill="url(#accentGrad)" opacity="0.85" />
+
+  <!-- Subtitle -->
+  <text x="50%" y="98" text-anchor="middle" dominant-baseline="middle"
+        font-family="'Fira Code', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif"
+        font-size="14.5" font-weight="600" fill="#e2e8f0" letter-spacing="0.5">
+    Full-Stack Developer  •  Data &amp; ML  •  Ingeniería Informática PUCV
+  </text>
+</svg>

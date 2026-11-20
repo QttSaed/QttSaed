@@ -1,0 +1,27 @@
+<svg width="854" height="90" viewBox="0 0 854 90" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117" />
+      <stop offset="45%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0891b2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Animated Wave 1 (Back) -->
+  <path fill="url(#footerGrad)" fill-opacity="0.45">
+    <animate attributeName="d" dur="14s" repeatCount="indefinite" keyTimes="0;0.5;1"
+      values="
+        M0 90 L0 35 Q 213.5 5 427 32 T 854 25 L 854 90 Z;
+        M0 90 L0 22 Q 213.5 55 427 22 T 854 40 L 854 90 Z;
+        M0 90 L0 35 Q 213.5 5 427 32 T 854 25 L 854 90 Z" />
+  </path>
+
+  <!-- Animated Wave 2 (Front) -->
+  <path fill="url(#footerGrad)" fill-opacity="0.92">
+    <animate attributeName="d" dur="10s" repeatCount="indefinite" keyTimes="0;0.5;1"
+      values="
+        M0 90 L0 42 Q 213.5 65 427 38 T 854 45 L 854 90 Z;
+        M0 90 L0 32 Q 213.5 12 427 42 T 854 28 L 854 90 Z;
+        M0 90 L0 42 Q 213.5 65 427 38 T 854 45 L 854 90 Z" />
+  </path>
+</svg>

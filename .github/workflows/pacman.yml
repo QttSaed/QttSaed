@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "0 0 * * *" # Se actualiza solo cada 24 horas
   workflow_dispatch:    # Botón para ejecutarlo manualmente desde la pestaña Actions
-  push:
-    branches:
-      - main
 
 jobs:
   generate:
@@ -16,15 +13,19 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: Generate Pac-Man SVG (Light & Dark)
-        uses: abozanona/pacman-contribution-graph@main
-        with:
-          github_user_name: ${{ github.repository_owner }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Push SVGs to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Generate Neon Cyberpunk Pac-Man SVGs (Dark & Light)
+        run: |
+          python3 scripts/generate_pacman.py
+          cp dist/pacman-contribution-graph-dark.svg assets/pacman-dark.svg
+          cp dist/pacman-contribution-graph.svg assets/pacman-light.svg
+
+      - name: Commit updated Arcade SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/pacman-dark.svg assets/pacman-light.svg
+          git diff --staged --quiet || git commit -m "Chore: actualizar tablero Pac-Man Contribution Arcade"
+          git push
